@@ -62,11 +62,7 @@ const htmlLink = (link: String, filename: String) => {
 const copyLink = (event: any) => {
   // console.log(event.target.value)
   const res = copy(event.target.value)
-  if (res) {
-    ElMessage.success('链接复制成功')
-  } else {
-    ElMessage.success('链接复制失败')
-  }
+
 }
 </script>
 

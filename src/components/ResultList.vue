@@ -63,11 +63,6 @@ const markdownLinks = () => {
 const copyLink = (event: any) => {
   // console.log(event.target.innerText)
   const res = copy(event.target.innerText)
-  if (res) {
-    ElMessage.success('链接复制成功')
-  } else {
-    ElMessage.success('链接复制失败')
-  }
 }
 const handleClick = (tab: TabsPaneContext, event: Event) => {
   // console.log(tab, event)

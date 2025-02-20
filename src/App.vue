@@ -40,11 +40,6 @@
 					<router-view />
 				</div>
 
-				<div class="w-full h-16 flex items-center justify-center text-gray-500 text-sm">
-					<a :href="repoLink" target="_blank" class="underline">
-						{{ repoName }}
-					</a>
-				</div>
 			</el-scrollbar>
 		</div>
 	</el-config-provider>
@@ -56,8 +51,7 @@ import { useRouter } from 'vue-router'
 import { ElScrollbar, ElConfigProvider } from 'element-plus'
 import zhCn from "element-plus/es/locale/lang/zh-cn"
 
-const repoLink = 'https://blog.lianglianglee.com'
-const repoName = '墓灵守护'
+
 const appName = '图床管理工具'
 
 document.title = appName

@@ -96,10 +96,5 @@ const imageError = ref(false)
 const loading = ref(true)
 const copyLink = (link : string) => {
   const res = copy(link)
-  if (res) {
-    ElMessage.success('链接复制成功')
-  } else {
-    ElMessage.success('链接复制失败')
-  }
 }
 </script>
